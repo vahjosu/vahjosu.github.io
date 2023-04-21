@@ -1,0 +1,495 @@
+/* ----------------------General Settings--------------- */
+*{
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* span{
+    color: #e71b5f;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 10px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+p{
+    color: white;
+}
+
+h1{
+    color: white;
+}
+
+li{
+    color: white;
+}
+
+/* --------------------End General Settings------------------- */
+
+
+/* --------------------Background-------------------- */
+body{
+    background-color: #0D2329;
+} 
+/* ------------------End Background------------------ */
+
+/* ----------------------Header-------------------  */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}   
+
+/* ---------------------Title Area----------------------*/
+#title {
+    width: 30%;
+    display: flex;
+    margin-left: 50px;
+}
+#title h1 {
+    line-height: 50px;
+    margin-top: 5px;
+}
+#title span{
+    font-size: 40px;
+    
+}
+/* -------------------End Title Area---------------------*/
+
+/* --------------------------Navigation Area------------------- */
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 50px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #e71b5f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover:after{
+    width: 100%;
+}
+/* -------------------------End Navigation Area---------------------- */
+/* -----------------------End Header Section----------------------- */
+
+
+/*---------------------- MAIN SECTION -----------------------*/
+/* ---------------------FRONT PAGE------------------------ */
+#front{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#front img{
+    width: 40%;
+    
+}
+/* ---------------------END FRONT PAGE------------------------ */
+
+/*------- About Me Section -------*/
+#aboutme{
+    padding: 80px 0;
+    margin-top: 35px;
+    margin-right: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;   
+}
+.aboutimage {
+    flex-basis: 35%;  
+}
+
+.aboutimage img{
+    margin-left: 60px;
+    width: 90%;
+    border-radius: 15px;
+}
+
+.aboutinfo{
+    flex-basis: 60%;
+    text-align: left;
+}
+
+.aboutinfo p{
+    font-size: 20px;
+    line-height: 38px;
+}
+
+.about-title{
+    font-size: 60px;
+    font-weight: 600;
+}
+/* -------------------ABOUT ME Navigation---------------------  */
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    position:relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #e71b5f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 5px -40px;
+    font-size:  22px;
+    line-height: 32px;
+}
+
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+.socmed h1{
+    margin-top: 20px;
+    margin-left: 170px;
+    line-height: 60px;
+    text-align: left;
+}
+/*------- About Me Section -------*/
+
+/* -------------------Interests Section----------------- */
+#skills h1{
+    padding: 30px;
+    font-size: 50px;
+}
+
+.skill-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+.skill-list div{
+    font: white;
+    background-color: #0b1d22;
+    padding: 50px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    margin: 25px;
+    transition: background 0.5s, transform 0.5s;
+}
+.skill-list div:hover{
+    background-color: #e71b5f;
+    transform: translateY(-10px);
+
+}
+
+.skill-list h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 12%;
+}
+.skill-list li{
+    font-size: 16px;
+    list-style: none;
+    margin: 10px;
+}
+/* -----------------End Interests Section--------------- */
+/* ---------------------Social Medias------------------- */
+
+#socials .subtitle{
+    margin-top: 50px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+.soclist{
+    padding: 50px;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+}
+
+.FB{
+    margin-left: 40px;
+    margin-right: 200px;
+}
+.DC{
+    margin-right: 220px;
+}
+.GIT{
+    margin-right: 200px;
+}
+
+.socmed{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 20px;
+    margin: 50px;
+}
+
+.fb{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.fb img{
+    width:100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 1s;
+}
+
+.dc{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.dc img{
+    width:100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 1s;
+}
+
+
+.git{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.git img{
+    width:100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 1s;
+}
+
+
+.insta{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.insta img{
+    width:100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 1s;
+}
+
+.overfb{
+    width: 100%;
+    height: 0;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0,0,0,0.6), #3b5998);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+.overdc{
+    width: 100%;
+    height: 0;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0,0,0,0.6), #7289d9);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+.overgit{
+    width: 100%;
+    height: 0;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0,0,0,0.6), #171515);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+.overig{ 
+    width: 100%;
+    height: 0;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    opacity: .6;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    transition: height 0.5s;
+}
+
+.overfb a i{
+    font-size: 100px;
+    margin-top: 80px;
+    margin-left: 75px;
+}
+
+.overdc a i{
+    font-size: 100px;
+    margin-top: 80px;
+    margin-left: 75px;
+}
+
+.overgit a i{
+    font-size: 100px;
+    margin-top: 80px;
+    margin-left: 75px;
+}
+
+.overig a i{
+    font-size: 100px;
+    margin-top: 80px;
+    margin-left: 75px;
+}   
+
+.fb:hover img{
+    transform: scale(1.1);
+} 
+.dc{
+    transition: transform 1s;
+}
+.dc:hover img{
+    transform: scale(1.1);
+}
+.git{
+    transition: transform 1s;
+}
+.git:hover img{
+    transform: scale(1.1);
+}
+.insta{
+    transition: transform 1s;
+}
+.insta:hover img{
+    transform: scale(1.1);
+}
+.insta{
+    transition: transform 1s;
+}
+.insta:hover img{
+    transform: scale(1.1);
+}
+
+.fb:hover .overfb{
+    height: 100%;
+}.dc:hover .overdc{
+    height: 100%;
+} .git:hover .overgit{
+    height: 100%;
+} 
+.insta:hover .overig{
+    height: 100%;
+} 
+
+/* -------------------Social Medias----------------- */
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+    background-color: #0b1d22;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    line-height: 35px;
+}   
+
+.spacing p{   
+    line-height: 60px;
+}
+
+/* Footer Section */
+
+nav .fas{
+    display: none;
+}
+
+/* Responsive Code */
+/* Phone */
+/* @media only screen and (max-width: 600px) {
+    #title{
+        margin: 10px 40px;
+        font-size: 12px;
+        line-height: 5px;
+    }
+
+    #front img{
+        margin-top: 30px;
+        width: 70%;
+    }
+
+    nav .fas{
+        color: #fff;
+        display: block;
+        font-size: 35px;
+        margin: 20px 0 30px;
+    }
+    nav ul{
+        background-color: #e71b5f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        color: white;
+        position: absolute;
+        top: 25px;
+        left: 25px;    
+        cursor: pointer;
+    }
+} */

@@ -1,0 +1,192 @@
+<!DOCTYPE html> <!-- This line declares the document type as HTML, which is necessary for the browser to interpret the code correctly. -->
+<html lang="en"> <!--This line marks the beginning of the HTML document. The "lang" attribute specifies the language of the document, in this case, English.-->
+<head><!--This tag marks the beginning of the head section of the HTML document, which contains information about the document but is not displayed on the page itself.-->
+    <meta charset="UTF-8"><!--This line specifies the character encoding used for the document, which is necessary for the browser to correctly display special characters.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--This line specifies the compatibility mode for the document, specifically for Internet Explorer.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--This line specifies the viewport settings for the document, which affects how the page is displayed on different devices with different screen sizes.-->
+    <title>r10 HTML and CSS</title><!--This line specifies the title of the document, which is displayed in the browser's title bar and is used by search engines to index the page.-->
+    <link rel="stylesheet" href="style/portfolio.css">
+    <script src="https://kit.fontawesome.com/3ed9fafff6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="icon" href="image/Logo.png" type="image/icon type">
+</head>
+<body>   
+    <header>
+        <div id="title">
+            <h1><span>J</span>OSHUA <span>V</span>ALMORIA</h1>
+        </div>
+        <nav>
+            <ul id="menu">    
+                <li><a href="#header">Home</a></li>
+                <li><a href="#aboutme">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#socials">Socials</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        <nav>
+    </header>   
+    <main>      
+        <div id="front">
+            <img src="image/Logo.png" alt="hero">
+        </div>
+        <div id="aboutme">
+            <div class="container">
+                <div class="row">
+                    <div class="aboutimage">
+                        <img src="image/Joshu.jpeg">
+                    </div>
+                    <div class="aboutinfo">
+                        <h1 class="about-title">About Me</h1>
+                        <p>Hello my fellow viewers it is I, <span>Joshua Valmoria</span> and welcome to my first 
+                           <span>Individual Web Design Project</span>. I once studied <span>HTML</span> program in 
+                           10th grade but we haven`t learn the <span>CSS</span> and <span>JavaScript</span> yet. However, I request you to have a 
+                           look in my profile momentarily. Enjoy!</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('bio')">Bioligal Identity</p>
+                            <p class="tab-links" onclick="opentab('civil')">Citizen Information</p>
+                            <p class="tab-links" onclick="opentab('educ')">Education</p>
+                            <!-- <p class="tab-links" onclick="opentab('skills')">Skills</p> -->
+                            
+                        </div>
+                        <div class="tab-contents active-tab" id="bio">
+                            <ul>
+                                <li><span>Full Name:</span> Joshua Valmoria</li>
+                                <li><span>Birthdate:</span> May 15, 2003</li>
+                                <li><span>Age:</span> 19</li>
+                                <li><span>Sex:</span> Male</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="civil">
+                            <ul>
+                                <li><span>Address:</span> Purok-4 Tablon, Cagayan de Oro City</li>
+                                <li><span>Religion:</span> Catholic</li>
+                                <li><span>Citizenship:</span> Filipino</li>
+                                <li><span>Civil Status:</span> Single</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="educ">
+                            <ul>
+                                <li><span>Elementary:</span> Tablon Elementary School</li>
+                                <li><span>Junior High:</span> Cagayan de Oro National High School-JHS</li>
+                                <li><span>Senior High:</span> Cagayan de Oro National High School-SHS</li>
+                                <li><span>College:</span> Bachelor Science in Information Technology at USTP</li>
+                            </ul>
+                        </div>                 
+                    </div>
+                </div>    
+            </div>
+        </div>
+        
+        <div id="skills">
+            <div class="container">
+                <h1 class="subtitle"><span>S</span>kills and <span>E</span>xperiences</h1>
+                <div class="skill-list">
+                    <div>
+                        <h2>Mathematics</h2>
+                        <li>Cultivated my math knowledge before pre-shool
+                        <li>Joined competition related to Math in Elementary
+                        <li>Stopped doing competition in High School
+                        <li> Continues to enjoy learning up to Calculus in Senior High School 
+                    </p>
+                    </div>
+                    <div>
+                        <h2>Singing</h2>
+                        <li>Discovered my ability by my classmate who good at singing at 6th grade
+                        <li> Refuses to join competition despite given the opportunity
+                        <li> Singing as my hobby and enjoy learning new styles
+                    </div>
+                    <div>
+                        <h2>Dancing</h2>
+                        <li>Discovered at 7th grade
+                        <li> Tried to join class competition once and won
+                        <li> Up until today I enjoy learning new styles and interested on new dance genres
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div id="socials">
+            <div class="container">
+                <h1 class="subtitle"><span>S</span>ocial <span>M</span>edias</h1>
+                <div class="soclist">
+                    <div class="FB">Facebook</div> 
+                    <div class="DC">Discord</div>
+                    <div class="GIT">GitHub</div> 
+                    <div class="IG">Instagram</div> 
+                </div>  
+                <div class="socmed">
+                    <div class="fb">
+                        <img src="image/fb.jpg">
+                            <div class="layer">
+                                <div class="overfb">
+                                    <a href="https://www.facebook.com/v.ahjosu.92" target =""><i class="fa-brands fa-facebook"></i></a> 
+                                </div>  
+                            </div>
+                    </div>
+                    <div class="dc">
+                        <img src="image/dc2.jpeg">   
+                        <div class="layer">
+                            <div class="overdc">
+                                <a href="https://discord.com/users/690904036148510730" target =""><i class="fa-brands fa-discord"></i></a>
+                            </div>  
+                        </div>                                                            
+                    </div>
+                    <div class="git">
+                        <img src="image/gt.png">
+                        <div class="layer">                           
+                            <div class="overgit">
+                                <a href="https://github.com/vahjosu" target =""><i class="fa-brands fa-github"></i></a>
+                            </div> 
+                        </div>                        
+                    </div>
+                    <div class="insta">
+                        <img src="image/inst.png"> 
+                        <div class="layer">
+                            <div class="overig">
+                                <a href="https://www.instagram.com/v.ahjosu.92/" target =""><i class="fa-brands fa-instagram"></i></a>
+                            </div>                           
+                        </div>
+                    </div>                                                
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            
+        //     var side = document.getElementById("menu");
+
+        //     function openmenu(){
+        //         side.style.right = "0";
+        //     }
+        //     function closemenu(){
+        //         side.style.right = "-200px";
+        //     }
+        // </script>
+
+   </main>
+
+     <footer> 
+        <div class="spacing">     
+            <p>Copyright &copy; 2003-2023 All Rights Reserved.</p>
+        </div>  
+    </footer>
+</body>
+</html>
